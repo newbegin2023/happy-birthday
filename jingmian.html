@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy birthday!(*^▽^*)</title>
+    <link rel="stylesheet" href="jingmian.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <h2>01</h2>
+                <h3>第一个🎁</h3>
+                <p>生日快乐呀!这是第一个礼物（只能选一个o）</p>
+                <a href="fox1.html">确定选我</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>02</h2>
+                <h3>第二个🌈</h3>
+                <p>生日快乐呀!这是第二个礼物（只能选一个o）</p>
+                <a href="fox2.html">确定选我</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="content">
+                <h2>03</h2>
+                <h3>第三个🎂</h3>
+                <p>生日快乐呀!这是第三个礼物（只能选一个o）</p>
+                <a href="fox3.html">确定选我</a>
+            </div>
+        </div>
+    </div>
+    <script src="vanilla-tilt.js"></script>
+    <script>
+        // vanilla-tilt.js是一个平滑的3D倾斜JS库，具体参数配置度娘可查到
+        VanillaTilt.init(document.querySelectorAll(".card"),{
+            max:15, //最大倾斜度数
+            speed:400, //倾斜转换的速度
+            glare:true,//是否开启眩光效果
+            "max-glare":1//最大眩光的不透明度
+        })
+        function dianji1() {
+        let page1 = document.querySelector(".page1");
+        let page2 = document.querySelector(".page2");
+        page1.style.display = "none";
+        page2.style.display = "flex";
+      }
+      function dianji2() {
+        let page1 = document.querySelector(".page1");
+        let page2 = document.querySelector(".page2");
+        page1.style.display = "flex";
+        page2.style.display = "none";
+      }
+
+</script>
+</body>
+</html>
